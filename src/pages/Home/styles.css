@@ -1,0 +1,231 @@
+.container {
+  padding: 40px;
+  flex: 1;
+}
+
+.container .header {
+  width: 100%;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .header h1 {
+  font-family: "Merriweather Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #c4d4e3;
+}
+
+.container .header a {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #c4d4e3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container .content {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.container .content .card {
+  width: calc(100% / 3 - 20px);
+  height: 186px;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .content .card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .card .card-header div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.container .content .card .card-header h1 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c4d4e3;
+}
+
+.container .content .card p {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #837e9f;
+}
+
+.container .content .card .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .content .card .card-footer p {
+  color: #c4d4e3;
+  text-transform: capitalize;
+}
+
+.container form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container form .input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container form .input-group input,
+select {
+  padding: 12px 16px;
+
+  height: 50px;
+  background: #302f3d;
+  border-radius: 6px;
+  outline: none;
+  color: #c4d4e3;
+}
+
+.container form .input-group label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #c4d4e3;
+}
+
+.container form .inputs-groups {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.container form .input-group button {
+  padding: 12px 16px;
+  height: 50px;
+  background: #302f3d;
+  border: 1px solid #302f3d;
+  border-radius: 6px;
+  outline: none;
+  color: #c4d4e3;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.container form .input-group button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.bottom-footer {
+  background: #302f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  bottom: 0;
+}
+
+.bottom-footer div p {
+  color: #c4d4e3;
+}
+
+.bottom-footer main {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-footer main a {
+  color: #c4d4e3;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .container .header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container .header h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .container .header a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .container .content {
+    flex-direction: column;
+  }
+
+  .container .content .card {
+    width: 100%;
+  }
+
+  .container .content .card p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .container form .input-group input {
+    padding: 12px;
+  }
+
+  .container form .input-group label {
+    font-size: 14px;
+  }
+
+  .container form .inputs-groups {
+    flex-direction: column;
+  }
+  .bottom-footer main {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+}
