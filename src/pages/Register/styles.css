@@ -1,0 +1,136 @@
+.container-logon {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-logon span {
+  font-weight: 700;
+  font-size: 24px;
+  color: #c4d4e3;
+}
+
+.container-logon span:nth-child(3n + 2) {
+  color: rgb(35, 134, 54);
+}
+
+.container-logon form {
+  width: 400px;
+  background: #302f3d;
+  padding: 30px 20px;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.container-logon form header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.container-logon form header h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #c4d4e3;
+  align-self: center;
+}
+
+.container-logon form header h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #c4d4e3;
+  align-self: center;
+}
+
+.container-logon form .inputs-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-logon form .inputs-group .input-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #22212c;
+  border-radius: 6px;
+  outline: none;
+  gap: 10px;
+}
+
+.container-logon form .inputs-group .input-icon input {
+  background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #c4d4e3;
+}
+
+.container-logon form .inputs-group .input-icon input::placeholder {
+  color: #c4d4e3;
+}
+
+.container-logon form button {
+  padding: 12px 16px;
+  background-color: rgb(35, 134, 54);
+
+  border-radius: 6px;
+  color: #fff;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  transition: all 0.2s;
+}
+
+.container-logon form button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.container-logon .create-account {
+  display: flex;
+  gap: 5px;
+}
+
+.container-logon .create-account p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #c4d4e3;
+}
+
+.container-logon .create-account a {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(88, 166, 255);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container-logon {
+    padding: 10px;
+  }
+
+  .container-logon span {
+    font-size: 20px;
+  }
+
+  .container-logon form {
+    width: 100%;
+  }
+}
