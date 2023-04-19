@@ -1,5 +1,6 @@
 import { Home } from "./pages/Home";
+import { Logon } from "./pages/Logon";
 
 export function App() {
-  return <Home />;
+  return <Logon />;
 }
