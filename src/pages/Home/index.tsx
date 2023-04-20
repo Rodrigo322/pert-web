@@ -1,5 +1,6 @@
 import {
   Circuitry,
+  Copyright,
   GithubLogo,
   LinkedinLogo,
   PencilLine,
@@ -36,10 +37,14 @@ export function Home() {
   const currentYear = date.getFullYear();
 
   useEffect(() => {
+    getPerts();
+  }, []);
+
+  function getPerts() {
     api.get("get-perts").then((response) => {
       setMyData(response.data);
     });
-  }, []);
+  }
 
   function createPert(e: FormEvent) {
     e.preventDefault();
@@ -70,12 +75,11 @@ export function Home() {
 
     const newMyData = myData.filter((id) => id !== id);
     setMyData(newMyData);
-
-    console.log(newMyData);
+    getPerts();
   }
 
   return (
-    <div className="home">
+    <>
       <div className="container">
         <header className="header">
           <h1>Minhas estimativas</h1>
@@ -204,9 +208,10 @@ export function Home() {
           </a>
         </main>
         <div>
-          <p>&copy; {currentYear}</p>
+          <Copyright color="#c4d4e3" size={32} />
+          <p>{currentYear}</p>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

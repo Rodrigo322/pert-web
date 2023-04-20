@@ -155,7 +155,7 @@ select {
   opacity: 0.8;
 }
 
-.home .bottom-footer {
+.bottom-footer {
   background: #302f3d;
   display: flex;
   justify-content: center;
@@ -163,13 +163,15 @@ select {
   flex-direction: column;
   gap: 20px;
   padding: 30px;
-  bottom: 0;
-  width: 100%;
+}
+
+.bottom-footer div {
+  display: flex;
+  align-items: center;
 }
 
 .bottom-footer div p {
   color: #c4d4e3;
-
 }
 
 .bottom-footer main {
