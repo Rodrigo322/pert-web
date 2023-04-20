@@ -31,11 +31,11 @@ export function Logon() {
       </form>
       <div className="create-account">
         <p> Novo por aqui?</p>
-        <a href="#">Crie sua conta</a>
+        <Link to="/register">Crie sua conta</Link>
       </div>
       <div className="create-account">
         <p> Esqueceu sua senha?</p>
-        <a href="#">Clique aqui.</a>
+        <Link to="#">Clique aqui.</Link>
       </div>
     </div>
   );

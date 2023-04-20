@@ -1,7 +1,5 @@
-import { Home } from "./pages/Home";
-import { Logon } from "./pages/Logon";
-import { Register } from "./pages/Register";
+import { AppRoutes } from "./routes";
 
 export function App() {
-  return <Register />;
+  return <AppRoutes />;
 }
