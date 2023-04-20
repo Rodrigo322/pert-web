@@ -1,6 +1,7 @@
 .container {
   padding: 40px;
   flex: 1;
+  min-height: 100vh;
 }
 
 .container .header {
@@ -31,6 +32,14 @@
   color: #c4d4e3;
   text-decoration: none;
   cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.2s;
+
+}
+
+.container .header a:hover {
+  background-color: #22212c;
 }
 
 .container .content {
@@ -146,7 +155,7 @@ select {
   opacity: 0.8;
 }
 
-.bottom-footer {
+.home .bottom-footer {
   background: #302f3d;
   display: flex;
   justify-content: center;
@@ -155,10 +164,12 @@ select {
   gap: 20px;
   padding: 30px;
   bottom: 0;
+  width: 100%;
 }
 
 .bottom-footer div p {
   color: #c4d4e3;
+
 }
 
 .bottom-footer main {

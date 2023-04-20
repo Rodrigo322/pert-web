@@ -32,6 +32,9 @@ export function Home() {
   const [pessimistic, setPessimistic] = useState(0);
   const [myData, setMyData] = useState<IData[]>([]);
 
+  const date = new Date();
+  const currentYear = date.getFullYear();
+
   useEffect(() => {
     api.get("get-perts").then((response) => {
       setMyData(response.data);
@@ -72,7 +75,7 @@ export function Home() {
   }
 
   return (
-    <>
+    <div className="home">
       <div className="container">
         <header className="header">
           <h1>Minhas estimativas</h1>
@@ -182,12 +185,7 @@ export function Home() {
           </form>
         )}
       </div>
-      {/* <footer className="bottom-footer">
-        <div>
-          <p>
-            Layout desenvolvido por <strong>Rodrigo Lucas</strong>
-          </p>
-        </div>
+      <footer className="bottom-footer">
         <main>
           <a
             href="https://www.linkedin.com/in/rodrigolucas322/"
@@ -205,7 +203,10 @@ export function Home() {
             <YoutubeLogo color="#c4d4e3" size={32} />
           </a>
         </main>
-      </footer> */}
-    </>
+        <div>
+          <p>&copy; {currentYear}</p>
+        </div>
+      </footer>
+    </div>
   );
 }

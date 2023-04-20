@@ -9,4 +9,6 @@ body {
   font-family: "Merriweather Sans", sans-serif;
   background-color: #22212c;
   overflow-x: hidden;
+  height: 100%;
+
 }
