@@ -70,6 +70,15 @@
   gap: 10px;
 }
 
+.container-logon form .inputs-group .input-icon .btn-visible-password {
+  background: transparent;
+  border: none;
+}
+
+.container-logon form .inputs-group .input-icon .btn-visible-password:hover {
+  cursor: pointer;
+}
+
 .container-logon form .inputs-group .input-icon input {
   background: transparent;
   border: none;

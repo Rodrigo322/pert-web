@@ -1,8 +1,17 @@
-import { Envelope, Eye, Lock, Password } from "@phosphor-icons/react";
+import {
+  Envelope,
+  Eye,
+  EyeClosed,
+  Lock,
+  Password,
+} from "@phosphor-icons/react";
 import "./styles.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export function Logon() {
+  const [isVisiblePassword, setIsVisiblePassword] = useState(false);
+
   return (
     <div className="container-logon">
       <div className="logo">
@@ -22,8 +31,25 @@ export function Logon() {
 
           <div className="input-icon">
             <Lock color="#c4d4e3" size={25} />
-            <input type="text" placeholder="Sua senha" />
-            <Eye color="#c4d4e3" size={25} />
+            <input
+              type={isVisiblePassword ? "text" : "password"}
+              placeholder="Sua senha"
+            />
+
+            {isVisiblePassword && (
+              <Eye
+                onClick={() => setIsVisiblePassword(!isVisiblePassword)}
+                color="#c4d4e3"
+                size={25}
+              />
+            )}
+            {!isVisiblePassword && (
+              <EyeClosed
+                onClick={() => setIsVisiblePassword(!isVisiblePassword)}
+                color="#c4d4e3"
+                size={25}
+              />
+            )}
           </div>
         </div>
 
