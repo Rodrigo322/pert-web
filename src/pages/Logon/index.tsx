@@ -61,7 +61,7 @@ export function Logon() {
       </div>
       <div className="create-account">
         <p> Esqueceu sua senha?</p>
-        <Link to="#">Clique aqui.</Link>
+        <Link to="/home">Clique aqui.</Link>
       </div>
     </div>
   );
